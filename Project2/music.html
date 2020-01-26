@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- Student Name:Harish Harish -->
+<html lang="en">
+  <head>
+    <title>A Music Web Application</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="music.js"></script>
+  </head>
+  <body onload="initialize();">
+    <form>
+       <label>Artist name: <input type="text" id="form-input"/></label>
+       <input type="button" onclick="sendRequest();" value="Display Info"/>
+    </form>
+    <div id="output">
+      <h2>Artist Details</h2>
+      <p><img id="photo"/></p>
+      <ul>
+          <li><label>Artist name:<data id="name"></data></label></li>
+          <li>Link to Last.fm:<a id="last"></a></li>
+          <li id="biography"></li>
+          <li id="topAlbum"></li>
+          <li id="similarArtists"></li>
+      </ul>
+    </div>
+  </body>
+</html>
